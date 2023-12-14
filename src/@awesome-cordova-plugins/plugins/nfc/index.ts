@@ -300,6 +300,15 @@ export class NFC extends AwesomeCordovaNativePlugin {
     return;
   }
   /**
+   * Writes an NdefMessage(array of ndef records) to a NFC tag and makes it a NFC tag read only. **Warning** this is permanent.
+   *
+   * @returns {Promise<any>}
+   */
+  @Cordova()
+  writeAndMakeReadOnly(message: any[]): Promise<any> {
+    return;
+  }
+  /**
    * Makes a NFC tag read only. **Warning** this is permanent.
    *
    * @returns {Promise<any>}
